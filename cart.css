@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav ul{
+	list-style:none;
+}
+nav ul a{
+	text-decoration:none;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	position: fixed;
+	width:100%;
+	z-index: 1;
+	background-color: #9db1f3;
+}
+nav ul{
+    display: flex;
+}
+body{
+	background:linear-gradient(20deg, rgb(112, 226, 112),rgb(201, 30, 30),rgb(128, 128, 226));
+}
+nav ul li a{
+	height:40px;
+	line-height: 43px;
+	margin: 3px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color:#2b2c2c;
+    letter-spacing: 1px;
+}
+.cart{
+    padding-top: 5%;
+}
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: xx-large;
+}
+.item{
+	display: flex;
+	font-size: large;
+	flex-direction: row;
+	padding-top: 2em;
+	padding-left: 2em;
+    height: 50vh;
+}
+.item ul{
+    display: flex;
+    list-style: none;
+    column-gap: 4em;
+	padding-top: 2%;
+	padding-bottom: 2%;
+    align-items: center;
+}
+.item-img img{
+    width: 100%;
+    /* height: 90vh; */
+     height: 100%;
+}
+hr{
+	border-color: black;
+	color: black;
+	height: 2px;
+}
+.total{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 5%;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+.tatal table{
+	width: 100%;
+	display: flex;
+}
+.total table td{
+	font-size: x-large;
+	column-gap: 2em;
+}
+.total table td:nth-child(even) { 
+    padding-left: 2em;
+} 
+.total ul{
+	list-style: none;
+}
+.total button{
+	margin-top: 2em;
+	font-size: xx-large;
+}
+.total button a{
+	text-decoration: none;
+}
+.checkout{
+	display: flex;
+	justify-content: center;
+}
+hr{
+	background-color: black;
+	margin-top: 1em;
+	border-style: solid;
+	color: black;
+}
+.hr{
+	border-style: groove;
+	width: 70%;
+}
+.line{
+	width: 100%;
+	height: 1%;
+	border-bottom: 1px solid black;
+	position: absolute;
+	padding-bottom: 2em;
+}
+.dot-line{
+	width: 80%;
+	height: 1%;
+	border-bottom: 2px dotted black;
+	position: absolute;
+}
+.item-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.item li{
+    object-fit: fill;
+}
+.item{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 90%;
+	/* column-gap: 20em; */
+}
+.item ul{
+	width: 60%;
+}
+.img{
+    width: 20%;
+}
+.dec{
+    padding-top: 5%;
+    display: flex;
+    /* flex-direction: column; */
+    column-gap: 8em;
+    width: 50%;
+    padding-left: 3em;
+    row-gap: 2em;
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+.price{
+	/* padding-right: 10%; */
+	/* margin-left: 2em; */
+	align-items: flex-end;
+	justify-content: flex-end;
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+}
+.quentity select{
+	font-size: large;
+    height: 20%;
+}
+.delete button{
+	font-size: large;
+	width: 100%;
+
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	background-color: ivory;
+	align-items: center;
+	justify-content: space-around;
+	flex: 1;
+	column-width: 30%;
+	margin-top: 5em;
+	padding-top: 2em;
+	padding-bottom: 5em;
+}
+footer>p{
+	font-size: xx-large;
+	margin-bottom: 2em;
+}
+.footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.address{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+.contact{
+	display: flex;
+	flex-direction: column;
+	row-gap: 1em;
+}
+.dropdown-menu{
+	display: none;
+}
+nav ul li:hover{
+	background-color: white;
+}
+@media(max-width:600px){
+	.cart{
+		padding-top: 15%;
+	}
+	.footer{
+		flex-direction: column;
+	}
+	.address{
+		width: 70%;
+		padding-bottom: 1em;
+	}
+	footer>p{
+		padding-left: 1em;
+	}
+	#main-cont{
+		padding-top: 15%;
+	}
+	.item ul{
+		flex-direction: column;
+		row-gap: 2em;
+	}
+	.total table td{
+		font-size: large;
+		column-gap: 2em;
+	}
+	.total{
+		justify-content: center;
+		align-items: flex-start;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+	}
+	.img{
+		width: 40%;
+	}
+	.dropdown-menu{
+		display: block;
+	}
+	.dropdown-menu ul{
+		display: none;
+	}
+	.dropdown-menu:hover ul, .dropdown-menu:focus ul {
+		top:0px;
+		display:block;
+		background-color: rgb(216, 151, 151);
+	}
+	.menu{
+		display: none;
+	}
+	.dropdown-menu button{
+		font-size: medium;
+	}
+}

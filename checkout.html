@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="checkout.css">
+    <script src="https://kit.fontawesome.com/f12e4b01cc.js" crossorigin="anonymous"></script>           
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="first-part">
+        <nav>
+            <ul class="menu">
+                <li><a href="home_page.html">Home</a></li>	
+                <li><a href="item_listing.html">Iphone</a></li>	
+                <li><a href="item_listing.html">Asus</a></li>	
+                <li><a href="item_listing.html">Mi</a></li>	
+                <li><a href="item_listing.html">Samsung</a></li>
+                <li><a href="cart.html">Cart</i></a></i></li>	
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li class='dropdown-menu'>
+                    <button>Menu Here <i class="fas fa-caret-down"></i></button>
+                    <ul>
+                        <li><a href="home_page.html">Home</a></li>	
+                        <li><a href="item_listing.html">Iphone</a></li>	
+                        <li><a href="item_listing.html">Asus</a></li>	
+                        <li><a href="item_listing.html">Mi</a></li>	
+                        <li><a href="item_listing.html">Samsung</a></li>
+                        <li><a href="cart.html">cart</a></li>
+                    </ul>
+                  </li>
+            </ul>
+        </nav>
+    </section>
+    <section id="pay-form">
+        <div class="row-1">
+            <div class="user">
+                <div class="heading">
+                    <strong>User Information</strong>
+                </div>
+                <form method="Get">
+                    <p>Full Name</p>
+                    <input type="text" id="name" name="name" placeholder="Full Name"><br><br>
+                    <p>Mobile Number</p>
+                    <input type="text" name="mobile" id="mobile" placeholder="Mobile Number"><br><br>
+                </form>
+            </div>
+            <hr>
+            <div class="user-address">
+                <div class="heading">
+                    <strong>Shipping Address</strong>
+                </div>
+                <form method="Get">
+                    <p>Country</p>
+                    <select name="country">
+                        <option value="India" selected>India</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="chad">chad</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="congo">congo</option>
+                        <option value="Bhutan">Bhutan</option>
+                    </select><br><br><br>
+                    <p>Address Line 1</p>
+                    <input type="text" id="adress-line-1" name="adress-line-1" placeholder="Address Line 1" required><br><br>
+                    <p>Address Line 2</p>
+                    <input type="text" id="adress-line-2" name="adress-line-2" placeholder="Address Line 2" required><br><br>
+                    <p>House no., Building, Company</p>
+                    <input type="text" id="house" name="house" placeholder="Flat, House no., Building, Company, Apartment" required><br><br>
+                    <p>Area, Colony, Street</p>
+                    <input type="text" id="area" name="area" placeholder="Area, Colony, Street, Sector, Village" required><br><br>
+                    <p>Landmark</p>
+                    <input type="text" id="landmark" name="landmark" placeholder="Lankdmark" ><br><br>
+                    <p>City / Town</p>
+                    <input type="text" id="city" name="city" placeholder="Town/City" required><br><br>
+                    <p>Pin Code</p>
+                    <input type="number" id="pin" name="pin" placeholder="PIN code" required><br><br>
+                </form>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="payment">
+                <div class="heading">
+                    <strong>Payment Details</strong>
+                </div>
+                <form method="get">
+                    <p>Card Number</p>
+                    <input type="number" id="card-no" name="card-no" placeholder="Card Number" ><br><br>
+                    <p>Card Holders Full Name</p>
+                    <input type="text" id="card-name" name="card-name" placeholder="Cardholder Full Name"><br><br>
+                    <p>Expiry Month and Year</p>
+                    <div class="expiry">
+                        <select name="Month">
+                            <option selected>January</option>
+                            <option>Febraury</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                        <select name="Year">
+                            <option selected>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                            <option>2030</option>
+                            <option>2031</option>
+                        </select>
+                    </div>
+                    
+                </form>
+            </div>
+            <hr>
+            <div class="order">
+                <div class="heading">
+                    <strong>Order Summery</strong>
+                </div>
+                <table>
+                    <tr>
+                        <td>Apple Iphone 12</td>
+                        <td>---</td>
+                        <td>&#8377; 12000</td>
+                    </tr>
+                    <tr>
+                        <td>Apple Iphone 11</td>
+                        <td>---</td>
+                        <td>&#8377; 10000</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="heading">
+                <strong>Total : 22000</strong>
+            </div>
+
+            <div class="pros-pay">
+                <button><a href="home_page.html">Proceed to Pay</a></button>
+            </div>
+        </section>
+       
+    <footer>
+        <p>For any queries please contact us.</p>
+        <div class="footer">
+        <div class="address">
+            <strong>Address :-</strong>
+            <p>
+                1st Floor, Oyo Workflo, Umiya Emporium, 
+                102, Hosur Main Road, Tavarekere, Opposite 
+                Forum Mall, Bengaluru, Karnataka 560029
+            </p>
+        </div>
+        <div class="contact">
+            <p><strong>Mail :- </strong><a href="mailto:avadhut.more@mountblue.tech">avadhut.more@mountblue.tech</a></p>
+            <p><strong>Mobile :-</strong>  <a href="tel:+911234567890">1234567890</a></p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
