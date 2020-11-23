@@ -29,7 +29,7 @@ nav ul li a{
 	margin: 3px;
 	padding: 0px 22px;
 	display: flex;
-	font-size: 0.8rem;
+	font-size: larger;
 	text-transform: uppercase;
 	font-weight: 500;
 	color:#2b2c2c;
@@ -44,31 +44,42 @@ nav ul li a{
 	justify-content: center;
 	font-size: xx-large;
 }
+td,.delete{
+	font-size: x-large;
+}
 .item{
 	display: flex;
 	font-size: large;
 	flex-direction: row;
-	padding-top: 2em;
-	padding-left: 2em;
-    height: 50vh;
+	/* padding-top: 2em; */
+	/* padding-left: 2em; */
+    /* height: 50vh; */
 }
 .item ul{
     display: flex;
     list-style: none;
     column-gap: 4em;
-	padding-top: 2%;
-	padding-bottom: 2%;
-    align-items: center;
+	/* padding-top: 2%; */
+	/* padding-bottom: 2%; */
+    align-items: initial;
 }
-.item-img img{
+.item-name{
+	font-size: larger;
+}
+.item-img {
     width: 100%;
     /* height: 90vh; */
      height: 100%;
+}
+.item-img img{
+	width: 100%;
+	height: 100%;
 }
 hr{
 	border-color: black;
 	color: black;
 	height: 2px;
+	margin-bottom: 1em;
 }
 .total{
 	display: flex;
@@ -112,7 +123,8 @@ hr{
 }
 .hr{
 	border-style: groove;
-	width: 70%;
+	/* width: 70%; */
+	margin-bottom: 1em;
 }
 .line{
 	width: 100%;
@@ -138,8 +150,9 @@ hr{
 .item{
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
-	width: 90%;
+	padding-left: 2em;
+	/* justify-content: flex-end; */
+	/* width: 90%; */
 	/* column-gap: 20em; */
 }
 .item ul{
@@ -168,6 +181,9 @@ hr{
 	display: flex;
 	flex-direction: row;
 }
+.quentity,.delete,.price,.total{
+	font-size: x-large;
+}
 .quentity select{
 	font-size: large;
     height: 20%;
@@ -178,6 +194,7 @@ hr{
 
 }
 footer{
+	font-size: x-large;
 	display: flex;
 	flex-direction: column;
 	background-color: ivory;
@@ -235,7 +252,7 @@ nav ul li:hover{
 		flex-direction: column;
 		row-gap: 2em;
 	}
-	.total table td{
+	.total table td{ 
 		font-size: large;
 		column-gap: 2em;
 	}

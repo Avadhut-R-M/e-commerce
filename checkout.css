@@ -29,15 +29,19 @@ nav ul li a{
 	margin: 3px;
 	padding: 0px 22px;
 	display: flex;
-	font-size: 0.8rem;
+	font-size: larger;
 	text-transform: uppercase;
 	font-weight: 500;
 	color:#2b2c2c;
     letter-spacing: 1px;
 }
+p,td{
+    font-size: x-large;
+}
 #pay-form{
     padding-top: 8%;
     padding-left: 2em;
+    padding-right: 3em;
 }
 input{
     border-bottom-color: black;
@@ -56,7 +60,7 @@ input{
 #pay-form{
     display: flex;
     column-gap: 5em;
-    width: 80%;
+    /* width: 80%; */
     flex: 1;
     justify-content: center;
 
@@ -127,6 +131,7 @@ table tr td{
     padding-top: 1em;
 }
 footer{
+    font-size: x-large;
 	display: flex;
 	flex-direction: column;
 	background-color: ivory;

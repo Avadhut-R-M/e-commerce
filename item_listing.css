@@ -4,6 +4,7 @@
 }
 nav ul{
 	list-style:none;
+
 }
 nav ul a{
 	text-decoration:none;
@@ -24,16 +25,19 @@ body{
 	background:linear-gradient(20deg, rgb(112, 226, 112),rgb(201, 30, 30),rgb(54, 54, 197))
 }
 nav ul li a{
+	font-size: larger;
 	height:40px;
 	line-height: 43px;
 	margin: 3px;
 	padding: 0px 22px;
 	display: flex;
-	font-size: 0.8rem;
 	text-transform: uppercase;
 	font-weight: 500;
 	color:#2b2c2c;
     letter-spacing: 1px;
+}
+p{
+	font-size: x-large;
 }
 .title{
     margin-bottom: 2em;
@@ -72,12 +76,13 @@ nav ul li a{
 }
 .item img{
     max-width: 100%;
-    border-radius: 25%;
+	/* border-radius: 25%; */
+	padding: 1em;
     height:80vh;
     /* object-fit: cover; */
 }
 .item{
-    border-radius: 20%;
+    /* border-radius: 20%; */
     background-color: white;
     display: flex;
     flex-direction: column;
