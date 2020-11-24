@@ -79,7 +79,7 @@ p{
     max-width: 80%;
 	/* border-radius: 25%; */
 	padding: 1em;
-    height:80vh;
+    height:50vh;
     /* object-fit: cover; */
 }
 .item{
@@ -160,7 +160,10 @@ nav ul li:hover{
     }
     #items{
         padding-top: 15%;
-    }
+	}
+	.item img{
+		height: auto;
+	}
     .dropdown-menu{
 		display: block;
 	}
