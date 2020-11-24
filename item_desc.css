@@ -36,7 +36,7 @@ nav ul li a{
     letter-spacing: 1px;
 }
 p{
-    font-size: x-large;
+    font-size: larger;
 }
 strong,li,td{
     font-size: larger;
@@ -127,9 +127,9 @@ strike{
     height: 10vh;
     width: 19vh;
 }
-#main{
+/* #main{
     /* padding: 2em; */
-}
+} */
 .cart-btn{
     padding-top: 2em;
 }
@@ -140,8 +140,11 @@ strike{
 #extra-detail{
     display: flex;
     flex-direction: column;
+    /* width: 90%; */
+    /* max-width: 70%; */
     align-content: center;
     align-items: center;
+    margin-left: 1em;
 }
 .detail-title{
     padding-top: 2em;
@@ -153,6 +156,16 @@ strike{
     padding-bottom: 0.7em;
     padding-left: 1em;
     padding-right: 0.2em;
+    /* width: 20%; */
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+
+}
+.tech-detail{
+    display: flex;
+    /* width: 80%; */
+    font-size: larger;
 }
 .tech-detail table tr:nth-child(even) { 
     background-color: rgb(250, 252, 250); 
@@ -244,5 +257,10 @@ nav ul li:hover{
 	}
 	.dropdown-menu button{
 		font-size: medium;
-	}
+    }
+    .tech-detail{
+        display: flex;
+        align-content: flex-start;
+        font-size: small;
+    }
 }
